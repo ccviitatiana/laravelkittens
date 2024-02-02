@@ -44,6 +44,6 @@ class User extends Authenticatable
     ];
 
     public function cats() {
-        return $this->hasMany(Cat::class);
+        return $this->hasMany(Cat::class,'cat_id');
     }
 }

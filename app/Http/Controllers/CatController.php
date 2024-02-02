@@ -29,10 +29,10 @@ class CatController extends Controller
     public function store(Request $request)
     {
         $cat = $request->user()->cats()->create([
-            'cat_id' => 1,
-            'breed' => $breed = $request->breed,
+            'breed' => $breed = 'a',
             'slug' => Str::slug($breed),
-            'body' => $request->body
+            'body' => 'a',
+            'name_cat' => 'a'
         ]);
         return redirect()->route('cats.edit', $cat);
     }

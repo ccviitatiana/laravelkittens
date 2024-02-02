@@ -15,9 +15,9 @@ class Cat extends Model
     }
 
     protected $fillable = [
-        'cat_id',
         'breed',
         'slug',
         'body',
+        'name_cat'
     ];
 }
