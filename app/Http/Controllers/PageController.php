@@ -16,8 +16,8 @@ class PageController extends Controller
         return view('blog', ['posts' => $posts, 'password' => $password]);
     }
 
-    public function post(Cat $post) 
+    public function post(Cat $post)
     {
-        return view('post', ['post' => $post]);
+        return view('post', compact('post'));
     }
 }

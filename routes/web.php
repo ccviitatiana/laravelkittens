@@ -8,8 +8,8 @@ Route::controller(PageController::class)->group(function() {
     Route::get('/','home')->name('home');
 
     Route::get('blog','blog')->name('blog');
-    
-    Route::get('blog/{post:id}', 'post')->name('post'); 
+
+    Route::get('blog/{post:id}', 'post')->name('post');
 
 });
 
